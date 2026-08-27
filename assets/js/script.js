@@ -9,7 +9,10 @@ const songProgressFill = document.querySelector("#songProgressFill");
 const songCurrentTime = document.querySelector("#songCurrentTime");
 const songDurationText = document.querySelector("#songDuration");
 const favoritePlayer = document.querySelector(".favorite-player");
+const pageLoader = document.querySelector("#pageLoader");
+const favicon = document.querySelector("#favicon");
 let greetingIndex = 0;
+const loadingStartedAt = Date.now();
 
 const sunflowerIcon = `
   <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
@@ -20,6 +23,15 @@ function updateThemeIcon() {
   const isDark = document.body.classList.contains("dark-theme");
   themeMark.innerHTML = isDark ? "✦" : sunflowerIcon;
   themeToggle.setAttribute("aria-label", isDark ? "Switch to light theme" : "Switch to dark theme");
+}
+
+function updateFavicon(theme) {
+  const icon =
+    theme === "dark"
+      ? `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#07142b"/><path d="M32 9l4.9 16.2L53 32l-16.1 6.8L32 55l-4.9-16.2L11 32l16.1-6.8L32 9z" fill="#f7fbff"/><path d="M47 7l1.8 6.2L55 15l-6.2 1.8L47 23l-1.8-6.2L39 15l6.2-1.8L47 7z" fill="#79d6cf"/></svg>`
+      : `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#fffaf0"/><circle cx="32" cy="32" r="13" fill="#f0b55f"/><path d="M32 6v10M32 48v10M6 32h10M48 32h10M13.6 13.6l7.1 7.1M43.3 43.3l7.1 7.1M50.4 13.6l-7.1 7.1M20.7 43.3l-7.1 7.1" stroke="#0f8f86" stroke-width="5" stroke-linecap="round"/></svg>`;
+
+  favicon.href = `data:image/svg+xml,${encodeURIComponent(icon)}`;
 }
 
 function rotateGreeting() {
@@ -40,6 +52,7 @@ function setTheme(theme) {
   document.body.classList.toggle("dark-theme", theme === "dark");
   localStorage.setItem("portfolio-theme", theme);
   updateThemeIcon();
+  updateFavicon(theme);
 }
 
 function formatSongTime(totalSeconds) {
@@ -74,6 +87,17 @@ function playFavoriteSong() {
   });
 }
 
+function revealPage() {
+  const minimumLoadingTime = 700;
+  const elapsedTime = Date.now() - loadingStartedAt;
+  const remainingTime = Math.max(minimumLoadingTime - elapsedTime, 0);
+
+  window.setTimeout(() => {
+    document.body.classList.remove("is-loading");
+    pageLoader.classList.add("is-hidden");
+  }, remainingTime);
+}
+
 const savedTheme = localStorage.getItem("portfolio-theme") || "light";
 setTheme(savedTheme);
 
@@ -104,5 +128,8 @@ if (songStart && songAudio && songProgressFill && songCurrentTime && songDuratio
 }
 
 window.addEventListener("scroll", updateNavbar, { passive: true });
-window.addEventListener("load", updateNavbar);
+window.addEventListener("load", () => {
+  updateNavbar();
+  revealPage();
+});
 window.setInterval(rotateGreeting, 1800);

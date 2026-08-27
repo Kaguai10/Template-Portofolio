@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio | Arif</title>
+    <title>Portofolio | Arif</title>
+    <link id="favicon" rel="icon" type="image/svg+xml" href="" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,7 +13,14 @@
     />
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
-  <body>
+  <body class="is-loading">
+    <div class="page-loader" id="pageLoader" role="status" aria-live="polite" aria-label="Loading page">
+      <div class="loader-card">
+        <span class="loader-spinner" aria-hidden="true"></span>
+        <p>Loading...</p>
+      </div>
+    </div>
+
     <header class="site-header" id="home">
       <nav class="navbar" aria-label="Main navigation">
         <button class="brand" id="themeToggle" type="button" aria-label="Change theme">

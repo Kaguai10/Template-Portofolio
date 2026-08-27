@@ -84,6 +84,62 @@ body {
   transition: color 0.3s ease, background 0.3s ease;
 }
 
+body.is-loading {
+  overflow: hidden;
+}
+
+body.is-loading .site-header,
+body.is-loading main,
+body.is-loading .footer {
+  visibility: hidden;
+}
+
+.page-loader {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  color: var(--ink);
+  background: var(--hero-bg);
+  transition: opacity 0.45s ease, visibility 0.45s ease;
+}
+
+.page-loader.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.loader-card {
+  display: grid;
+  place-items: center;
+  gap: 16px;
+}
+
+.loader-spinner {
+  width: 48px;
+  height: 48px;
+  border: 3px solid rgba(var(--accent-rgb), 0.18);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: loaderSpin 0.9s linear infinite;
+}
+
+.loader-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+@keyframes loaderSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 img {
   display: block;
   max-width: 100%;
