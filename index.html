@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Arif</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@700;800&family=Noto+Sans+KR:wght@700;800&family=Noto+Sans+SC:wght@700;800&family=Playfair+Display:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="home">
+      <nav class="navbar" aria-label="Main navigation">
+        <button class="brand" id="themeToggle" type="button" aria-label="Change theme">
+          Arif
+          <span class="theme-mark" id="themeMark" aria-hidden="true">✦</span>
+        </button>
+        <div class="nav-links">
+          <a href="#home">
+            <span class="nav-icon" aria-hidden="true">
+              <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 6V15H6V11C6 9.89543 6.89543 9 8 9C9.10457 9 10 9.89543 10 11V15H15V6L8 0L1 6Z" fill="currentColor"></path>
+              </svg>
+            </span>
+            <span class="nav-text">Home</span>
+          </a>
+          <a href="#about">
+            <span class="nav-icon" aria-hidden="true">
+              <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 7C9.65685 7 11 5.65685 11 4C11 2.34315 9.65685 1 8 1C6.34315 1 5 2.34315 5 4C5 5.65685 6.34315 7 8 7Z" fill="currentColor"></path>
+                <path d="M14 12C14 10.3431 12.6569 9 11 9H5C3.34315 9 2 10.3431 2 12V15H14V12Z" fill="currentColor"></path>
+              </svg>
+            </span>
+            <span class="nav-text">About</span>
+          </a>
+          <a href="#projects">
+            <span class="nav-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20,7H12.309a.5.5,0,0,1-.447-.276L10.276,3.553A1,1,0,0,0,9.382,3H4A1,1,0,0,0,3,4V20a1,1,0,0,0,1,1H20a1,1,0,0,0,1-1V8A1,1,0,0,0,20,7Zm-5,8H13v2a1,1,0,0,1-2,0V15H9a1,1,0,0,1,0-2h2V11a1,1,0,0,1,2,0v2h2a1,1,0,0,1,0,2Z" fill="currentColor"></path>
+              </svg>
+            </span>
+            <span class="nav-text">Projects</span>
+          </a>
+          <a href="#gallery">
+            <span class="nav-icon" aria-hidden="true">✦</span>
+            <span class="nav-text">Gallery</span>
+          </a>
+          <a href="#contact">
+            <span class="nav-icon" aria-hidden="true">
+              <svg viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1920 428.266v1189.54l-464.16-580.146-88.203 70.585 468.679 585.904H83.684l468.679-585.904-88.202-70.585L0 1617.805V428.265l959.944 832.441L1920 428.266ZM1919.932 226v52.627l-959.943 832.44L.045 278.628V226h1919.887Z" fill="currentColor" fill-rule="evenodd"></path>
+              </svg>
+            </span>
+            <span class="nav-text">Contact</span>
+          </a>
+        </div>
+      </nav>
+
+      <section class="hero">
+        <div class="hero-copy">
+          <div class="stat"><span></span> Ready to Build & Grow</div>
+          <p class="role">Web Designer & Photographer</p>
+          <h1>
+            <span class="hello-word" id="helloWord">Halo</span>
+            <span>I'm Arif</span>
+          </h1>
+          <p class="subtitle">Designing Experiences. Capturing Moments.</p>
+          <p class="description">
+            I'm a Web Designer passionate about web development, user interface design, and responsive design, with a creative side in photography. This portfolio brings together my technical work, continuous learning, and visual perspective.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-btn" href="#projects">Explore Portfolio</a>
+            <a class="text-link" href="#contact">Start a project <span>→</span></a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="visual-orbit" aria-hidden="true"></div>
+          <div class="portrait-frame">
+            <img src="assets/images/profile.jpeg" alt="Profile photo" />
+          </div>
+          <div class="visual-badge visual-badge-bottom">
+            <strong>Arif</strong>
+            <span>Nur Muhammad Heri</span>
+          </div>
+          <span class="sparkle sparkle-one">✦</span>
+          <span class="sparkle sparkle-two">✧</span>
+        </div>
+      </section>
+      <div class="wave-divider" aria-hidden="true">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+          <path d="M0,58 C240,118 360,0 590,48 C830,100 940,118 1130,62 C1250,26 1350,8 1440,32 L1440,120 L0,120 Z"></path>
+        </svg>
+      </div>
+    </header>
+
+    <main>
+      <section class="section about-section" id="about">
+        <p class="about-label">About me</p>
+        <h2 class="about-title">Who am I?</h2>
+        <div class="about-showcase">
+          <div class="about-collage">
+            <figure class="about-photo about-photo-main">
+              <img src="assets/images/gallery/16x9/wide-01.jpeg" alt="Portrait photo" />
+            </figure>
+            <figure class="about-photo about-photo-top">
+              <img src="assets/images/gallery/9x16/wide-03.jpeg" alt="Visual moment" />
+            </figure>
+            <figure class="about-photo about-photo-bottom">
+              <img src="assets/images/gallery/3x4/wide-02.jpeg" alt="Casual photo" />
+            </figure>
+          </div>
+
+          <div class="about-copy">
+            <h2>Web Designer & Photographer</h2>
+            <p>
+              I'm a Web Designer passionate about web development, user experience, and design, with a creative side in photography. This portfolio brings together my technical work, continuous learning, and visual perspective.
+            </p>
+            <p>
+              I have a strong foundation in web development, user interface design, and responsive design. I enjoy exploring new technologies and staying up-to-date with the latest trends in web design. My photography work allows me to express my creativity and capture moments that tell a story.
+            </p>
+
+            <article class="favorite-player" aria-label="Favorite song">
+              <p class="song-heading">FAVORITE SONG</p>
+              <img class="song-cover" src="assets/images/Cover-Teh_Hijau-Tulus.jpeg" alt="Teh Hijau song cover" />
+              <audio id="songAudio" src="assets/music/TULUS - Teh Hijau (Official Lyric Video).mp3" preload="metadata"></audio>
+              <div class="song-panel">
+                <div class="song-info">
+                  <h3>Teh Hijau</h3>
+                  <span>TULUS</span>
+                </div>
+                <div class="song-wave" aria-hidden="true">
+                  <span style="--h: 13px"></span>
+                  <span style="--h: 22px"></span>
+                  <span style="--h: 16px"></span>
+                  <span style="--h: 28px"></span>
+                  <span style="--h: 19px"></span>
+                  <span style="--h: 34px"></span>
+                  <span style="--h: 12px"></span>
+                  <span style="--h: 24px"></span>
+                  <span style="--h: 30px"></span>
+                  <span style="--h: 18px"></span>
+                  <span style="--h: 26px"></span>
+                  <span style="--h: 14px"></span>
+                  <span style="--h: 32px"></span>
+                  <span style="--h: 20px"></span>
+                  <span style="--h: 27px"></span>
+                  <span style="--h: 15px"></span>
+                  <span style="--h: 23px"></span>
+                  <span style="--h: 35px"></span>
+                  <span style="--h: 17px"></span>
+                  <span style="--h: 29px"></span>
+                  <span style="--h: 21px"></span>
+                  <span style="--h: 13px"></span>
+                  <span style="--h: 25px"></span>
+                  <span style="--h: 31px"></span>
+                  <span style="--h: 16px"></span>
+                  <span style="--h: 22px"></span>
+                  <span style="--h: 28px"></span>
+                  <span style="--h: 14px"></span>
+                </div>
+                <div class="song-progress" aria-label="Song progress">
+                  <span class="song-progress-fill" id="songProgressFill"></span>
+                </div>
+                <div class="song-meta">
+                  <span id="songCurrentTime">0:00</span>
+                  <span id="songDuration">0:00</span>
+                </div>
+              </div>
+              <button class="song-love" type="button" aria-label="Like song" disabled>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 20.5 10.7 19.3C5.8 14.9 3 12.4 3 8.9 3 6.1 5.2 4 7.9 4c1.6 0 3.1.7 4.1 1.9C13 4.7 14.5 4 16.1 4 18.8 4 21 6.1 21 8.9c0 3.5-2.8 6-7.7 10.4L12 20.5Z"></path>
+                </svg>
+              </button>
+              <div class="song-controls">
+                <button class="song-control song-control-ghost" type="button" aria-label="Previous song" disabled>
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M6 6h2v12H6V6Zm3.5 6 8.5-6v12l-8.5-6Z"></path>
+                  </svg>
+                </button>
+                <button class="song-control song-start" id="songStart" type="button" aria-label="Play song">
+                  <svg class="icon-play" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M8 5v14l11-7L8 5Z"></path>
+                  </svg>
+                  <svg class="icon-pause" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7 5h4v14H7V5Zm6 0h4v14h-4V5Z"></path>
+                  </svg>
+                </button>
+                <button class="song-control song-control-ghost" type="button" aria-label="Next song" disabled>
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M16 6h2v12h-2V6ZM6 18V6l8.5 6L6 18Z"></path>
+                  </svg>
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section projects-section" id="projects">
+        <div class="section-heading">
+          <p>My Projects</p>
+          <h2>Featured Projects & Creative Works</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <img src="assets/images/project-desain_grafis.png" alt="Design Graphics project preview" />
+            <div>
+              <span>Graphic Design</span>
+              <h3>Campus Poster Design</h3>
+              <p>Creative poster design using bold colors, typography, and playful visual elements.</p>
+            </div>
+          </article>
+          <article class="project-card">
+            <img src="assets/images/project-cloud_storage.png" alt="Cloud Storage project preview" />
+            <div>
+              <span>Web Application</span>
+              <h3>Cloud Storage</h3>
+              <p>Landing page for cloud storage service with modern design and complete features.</p>
+            </div>
+          </article>
+          <article class="project-card">
+            <img src="assets/images/project-cisco_acl.png" alt="Cisco ACL project preview" />
+            <div>
+              <span>Network Security</span>
+              <h3>Cisco ACL</h3>
+              <p>Implementing Access Control Lists (ACLs) to manage and secure network traffic on Cisco devices.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section gallery-section" id="gallery">
+        <div class="section-heading">
+          <p>My Gallery</p>
+          <h2>Puzzle moments and visual notes.</h2>
+        </div>
+        <div class="gallery-puzzle">
+          <figure class="gallery-item gallery-banner">
+            <img src="assets/images/gallery/18x9/photo-1.jpeg" alt="Gallery banner design" />
+          </figure>
+          <figure class="gallery-item gallery-wide-main">
+            <img src="assets/images/gallery/16x9/photo-2.jpeg" alt="Wide gallery design 1" />
+          </figure>
+          <figure class="gallery-item gallery-portrait-left">
+            <img src="assets/images/gallery/3x4/photo-1.jpeg" alt="Portrait gallery design 1" />
+          </figure>
+          <figure class="gallery-item gallery-square-a">
+            <img src="assets/images/gallery/1x1/photo-1.jpeg" alt="Square gallery design 1" />
+          </figure>
+          <figure class="gallery-item gallery-square-b">
+            <img src="assets/images/gallery/1x1/photo-4.jpeg" alt="Square gallery design 2" />
+          </figure>
+          <figure class="gallery-item gallery-story">
+            <img src="assets/images/gallery/9x16/photo-1.jpeg" alt="Story gallery design" />
+          </figure>
+          <figure class="gallery-item gallery-wide-secondary">
+            <img src="assets/images/gallery/16x9/photo-1.jpeg" alt="Wide gallery design 2" />
+          </figure>
+          <figure class="gallery-item gallery-square-c">
+            <img src="assets/images/gallery/1x1/photo-3.jpeg" alt="Square gallery design 3" />
+          </figure>
+          <figure class="gallery-item gallery-portrait-right">
+            <img src="assets/images/gallery/3x4/photo-2.jpeg" alt="Portrait gallery design 2" />
+          </figure>
+          <figure class="gallery-item gallery-square-d">
+            <img src="assets/images/gallery/1x1/photo-5.jpeg" alt="Square gallery design 4" />
+          </figure>
+          <figure class="gallery-item gallery-square-e">
+            <img src="assets/images/gallery/1x1/photo-2.jpeg" alt="Square gallery design 5" />
+          </figure>
+          <figure class="gallery-item gallery-compact-left">
+            <img src="assets/images/gallery/18x9/photo-2.jpeg" alt="Small gallery banner design" />
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="contact">
+      <div class="footer-pattern" aria-hidden="true"></div>
+      <div class="footer-inner">
+        <div class="footer-copy">
+          <p class="footer-kicker">Say Hello</p>
+          <h2>Let's Work Together</h2>
+          <p>
+            I'm open to collaboration, freelance work, and digital projects.
+          </p>
+          <div class="footer-info">
+            <a href="mailto:arifkaguai10@gmail.com">arifkaguai10@gmail.com</a>
+            <a href="tel:+6285885168794">+62 858 8516 8794</a>
+            <span>Jakarta, Indonesia</span>
+          </div>
+        </div>
+
+        <div class="contact-panel">
+          <a href="mailto:arifkaguai10@gmail.com">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path d="M3.75 5.25h16.5c.96 0 1.75.79 1.75 1.75v10c0 .96-.79 1.75-1.75 1.75H3.75C2.79 18.75 2 17.96 2 17V7c0-.96.79-1.75 1.75-1.75Zm.47 1.5 7.78 6.27 7.78-6.27H4.22Zm16.28 1.32-7.94 6.39a.9.9 0 0 1-1.12 0L3.5 8.07V17c0 .14.11.25.25.25h16.5c.14 0 .25-.11.25-.25V8.07Z"></path>
+              </svg>
+            </span>
+            <span><strong>Email</strong>arifkaguai10@gmail.com</span>
+            <b>→</b>
+          </a>
+          <a href="https://www.linkedin.com/in/arif-heri" target="_blank" rel="noreferrer">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path d="M5.34 8.67H2.31v12.02h3.03V8.67ZM3.82 3.31A1.76 1.76 0 1 0 3.8 6.83a1.76 1.76 0 0 0 .02-3.52Zm16.77 10.73c0-3.23-1.72-5.62-4.74-5.62-2 0-2.9 1.1-3.39 1.87V8.67H9.55v12.02h3.03v-5.94c0-1.56.3-3.07 2.23-3.07 1.9 0 1.93 1.78 1.93 3.17v5.84h3.04l.81-6.65Z"></path>
+              </svg>
+            </span>
+            <span><strong>LinkedIn</strong>linkedin.com/in/arif-heri</span>
+            <b>→</b>
+          </a>
+          <a href="https://github.com/kaguai10" target="_blank" rel="noreferrer">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path d="M12 .75A11.25 11.25 0 0 0 8.45 22.67c.56.1.77-.24.77-.54v-2.08c-3.13.68-3.79-1.34-3.79-1.34-.51-1.31-1.25-1.66-1.25-1.66-1.03-.7.07-.69.07-.69 1.13.08 1.73 1.17 1.73 1.17 1.01 1.73 2.65 1.23 3.3.94.1-.73.39-1.23.72-1.51-2.5-.29-5.13-1.25-5.13-5.56 0-1.23.44-2.23 1.16-3.02-.12-.28-.5-1.43.11-2.98 0 0 .95-.3 3.1 1.15A10.82 10.82 0 0 1 12 6.17c.94 0 1.88.13 2.76.38 2.15-1.45 3.09-1.15 3.09-1.15.62 1.55.23 2.7.12 2.98.72.79 1.16 1.79 1.16 3.02 0 4.33-2.64 5.27-5.15 5.55.41.36.77 1.05.77 2.12v3.06c0 .3.2.65.78.54A11.25 11.25 0 0 0 12 .75Z"></path>
+              </svg>
+            </span>
+            <span><strong>GitHub</strong>github.com/kaguai10</span>
+            <b>→</b>
+          </a>
+          <a href="https://medium.com/@arifkaguai10" target="_blank" rel="noreferrer">
+            <span class="contact-icon contact-icon-wide" aria-hidden="true">
+              <svg viewBox="-2 -4 24 24" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                <path d="M2.372 3.264a.784.784 0 0 0-.252-.658L.252.339V0H6.05l4.482 9.905L14.472 0H20v.339L18.403 1.88a.472.472 0 0 0-.177.452v11.334a.472.472 0 0 0 .177.452l1.56 1.542V16H12.12v-.339l1.615-1.58c.159-.16.159-.207.159-.451V4.468L9.402 15.962h-.606L3.566 4.468v7.704c-.043.324.064.65.29.884l2.101 2.568v.338H0v-.338l2.1-2.568a1.03 1.03 0 0 0 .272-.884V3.264z"></path>
+              </svg>
+            </span>
+            <span><strong>Medium</strong>medium.com/@arifkaguai10</span>
+            <b>→</b>
+          </a>
+          <a href="https://instagram.com/rif_kaguai10" target="_blank" rel="noreferrer">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path d="M7.75 2h8.5A5.76 5.76 0 0 1 22 7.75v8.5A5.76 5.76 0 0 1 16.25 22h-8.5A5.76 5.76 0 0 1 2 16.25v-8.5A5.76 5.76 0 0 1 7.75 2Zm0 1.7A4.05 4.05 0 0 0 3.7 7.75v8.5a4.05 4.05 0 0 0 4.05 4.05h8.5a4.05 4.05 0 0 0 4.05-4.05v-8.5a4.05 4.05 0 0 0-4.05-4.05h-8.5ZM12 7.05A4.95 4.95 0 1 1 12 16.95 4.95 4.95 0 0 1 12 7.05Zm0 1.7a3.25 3.25 0 1 0 0 6.5 3.25 3.25 0 0 0 0-6.5Zm5.17-2.28a1.16 1.16 0 1 1 0 2.32 1.16 1.16 0 0 1 0-2.32Z"></path>
+              </svg>
+            </span>
+            <span><strong>Instagram</strong>instagram.com/rif_kaguai10</span>
+            <b>→</b>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
