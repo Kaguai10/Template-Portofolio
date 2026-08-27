@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>Portfolio Website Template</h1>
+  <img src="https://readme-typing-svg.herokuapp.com?size=30&color=0f8f86&center=true&vCenter=true&width=650&lines=Portofolio+Website+Template">
 
   <img src="assets/images/preview.png"/>
 
